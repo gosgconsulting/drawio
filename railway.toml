@@ -1,0 +1,12 @@
+[build]
+builder = "nixpacks"
+buildCommand = "cd etc/build && ant war"
+
+[deploy]
+startCommand = "java -jar build/draw.war"
+healthcheckPath = "/"
+healthcheckTimeout = 300
+restartPolicyType = "on-failure"
+
+[environments]
+PORT = "8080"

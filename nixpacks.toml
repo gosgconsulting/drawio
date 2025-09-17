@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ['openjdk11', 'apache-ant']
+
+[phases.build]
+cmds = [
+  'cd etc/build',
+  'ant war'
+]
+
+[start]
+cmd = 'java -jar build/draw.war'
