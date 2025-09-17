@@ -8,5 +8,5 @@ healthcheckPath = "/"
 healthcheckTimeout = 300
 restartPolicyType = "on-failure"
 
-[environments]
+[variables]
 PORT = "8080"
