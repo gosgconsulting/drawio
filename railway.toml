@@ -6,7 +6,7 @@ buildCommand = "cd etc/build && ant war"
 startCommand = "java -jar build/draw.war"
 healthcheckPath = "/"
 healthcheckTimeout = 300
-restartPolicyType = "on-failure"
+restartPolicy = "on-failure"
 
 [variables]
 PORT = "8080"
